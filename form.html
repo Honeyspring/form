@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Digital Culture Registration Form</title>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  </head>
+  <body>
+    <div class="container-fluid" id="grad1">
+      <div class="row justify-content-center mt-0">
+        <div
+          class="col-11 col-sm-9 col-md-7 col-lg-6 text-center p-0 mt-3 mb-2 container"
+        >
+          <div class="card px-0 pt-4 pb-0 mt-3 mb-3">
+            <h2 class="head"><strong>Join Our Webinar</strong></h2>
+
+            <div class="row">
+              <div class="col-md-12 mx-0">
+                <form id="msform">
+                  <!-- progressbar -->
+                  <ul id="progressbar">
+                    <li class="active" id="personal">
+                      <strong>Personal</strong>
+                    </li>
+                    <li id="company"><strong>Company</strong></li>
+                    <li id="confirm"><strong>Finish</strong></li>
+                  </ul>
+                  <!-- fieldsets -->
+                  <!-- fieldsets -->
+                  <fieldset>
+                    <div class="form-card">
+                      <h2 class="fs-title text-center">Personal Information</h2>
+                      <input
+                        type="text"
+                        id="firstname"
+                        placeholder="Enter Firstname"
+                        name="firstname"
+                        class="validate input form-control"
+                        required
+                      />
+                      <input
+                        type="text"
+                        id="surname"
+                        placeholder="Enter Surname"
+                        name="surname"
+                        class="validate input form-control"
+                        required
+                      />
+                      <input
+                        type="text"
+                        id="email"
+                        placeholder="Enter Email"
+                        name="surname"
+                        pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-z]{2,4})$"
+                        class="validate input form-control"
+                        required
+                      />
+                      <input
+                        type="tel"
+                        id="mobile"
+                        class="input"
+                        placeholder="Enter Mobile Number (Whatsapp)"
+                        name="mobile "
+                        pattern="[0-9]){3}[0-9]{9}"
+                        class="validate input form-control"
+                        required
+                      />
+                      <input
+                        type="text"
+                        id="linkedin"
+                        placeholder="Enter LinkedIn Page"
+                        name="linkedIn"
+                        class="validate input form-control"
+                        required
+                      />
+                      <p>Please fill all form field to go to next step</p>
+                    </div>
+                    <input
+                      type="button"
+                      name="next"
+                      class="next action-button"
+                      value="Next "
+                      required
+                    />
+                  </fieldset>
+                  <fieldset>
+                    <div class="form-card">
+                      <h2 class="fs-title text-center">Company Information</h2>
+                      <input
+                        type="text"
+                        id="company"
+                        placeholder="Enter Company Name"
+                        name="company"
+                        class="validate input form-control"
+                        required
+                      />
+                      <input
+                        type="number"
+                        id="staff"
+                        placeholder="Enter  Number Of Staffs"
+                        name="staff"
+                        class="validate input form-control"
+                        required
+                      />
+                      <input
+                        type="text"
+                        id="position"
+                        placeholder="Enter Position"
+                        name="position"
+                        class="validate input form-control"
+                        required
+                      />
+                      <input
+                        type="text"
+                        id="position"
+                        placeholder="Enter Position"
+                        name="position"
+                        class="validate input form-control"
+                        required
+                      />
+                      <input
+                        type="text"
+                        id="companyWeb"
+                        placeholder="Enter  Company's Website"
+                        name="companyWeb"
+                        class="validate input form-control"
+                        required
+                      />
+                      <input
+                        type="text"
+                        id="companyLinkedIn"
+                        placeholder="Enter  Company's LinkedIn"
+                        name="companyLinkedIn"
+                        class="validate input form-control"
+                        required
+                      />
+                      <p>Please fill all form field to go to next step</p>
+                    </div>
+                    <input
+                      type="button"
+                      name="previous"
+                      class="previous action-button-previous"
+                      value="Previous"
+                      required
+                    />
+
+                    <input
+                      type="button"
+                      name="submit"
+                      id="submit"
+                      class="next action-button"
+                      value="submit"
+                      required
+                    />
+                  </fieldset>
+
+                  <fieldset>
+                    <div class="form-card">
+                      <h2 class="fs-title text-center">Success !</h2>
+                      <br /><br />
+                      <div class="row justify-content-center">
+                        <div class="col-3">
+                          <img
+                            src="https://img.icons8.com/color/96/000000/ok--v2.png"
+                            class="fit-image"
+                          />
+                        </div>
+                      </div>
+                      <br /><br />
+                      <div class="row justify-content-center">
+                        <div class="col-7 text-center">
+                          <h5>You Have SuccessfullyRegisterd</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </fieldset>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./form.js"></script>
+  </body>
+</html>
