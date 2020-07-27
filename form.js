@@ -6,6 +6,7 @@ function validateForm() {
     i,
     valid = true;
   x = document.getElementById("msform");
+  console.log(x)
   y = x[currentTab].getElementsByTagName("input");
   // A loop that checks every input field in the current_fs:
   for (i = 0; i < y.length; i++) {
@@ -17,7 +18,6 @@ function validateForm() {
       valid = false;
     }
   }
-
   return valid; // return the valid status
 }
 
@@ -51,6 +51,7 @@ $(document).ready(function () {
         duration: 600,
       }
     );
+    currentTab = currentTab + 1
   });
 
   $(".previous").click(function () {
@@ -82,6 +83,7 @@ $(document).ready(function () {
         duration: 600,
       }
     );
+    currentTab = currentTab - 1
   });
 
   $(".submit").click(function () {
