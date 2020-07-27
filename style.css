@@ -164,7 +164,7 @@ margin-left:66px;
 }
 
 #progressbar .active {
-  color: #000000;
+  color: #de5c00;
 }
 
 #progressbar li {
@@ -175,22 +175,6 @@ margin-left:66px;
   position: relative;
 }
 
-#progressbar #personal:before {
-  font-family: FontAwesome;
-  content: "\f007";
-}
-
-#progressbar #company:before {
-  font-family: FontAwesome;
-  content: "\f0f7";
-}
-
-
-
-#progressbar #confirm:before {
-  font-family: FontAwesome;
-  content: "\f00c";
-}
 
 #progressbar li:before {
   width: 50px;
@@ -219,8 +203,13 @@ margin-left:66px;
 #progressbar li.active:before,
 #progressbar li.active:after {
   background: #de5c00;
+  color:#de5c00;
 }
-
+ 
+.fa-user,.fa-industry,.fa-check{
+font-size: 2rem;
+margin:12px;
+}
 .fit-image {
   width: 100%;
   object-fit: cover;
